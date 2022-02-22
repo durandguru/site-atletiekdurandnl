@@ -1,3 +1,22 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+theme = "lynx"
+title = "Lynx"
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[author]
+  name = "Lynx"
+  image = "author.jpg"
+  links = [
+    { link = { href = "https://www.atletiekunie.nl/kenniscentrum/wedstrijdorganisator-en-jurylid/reglementen", text = "Atletiekunie Reglementen" } },
+    { link = { href = "https://www.atletiek.nl/over-atletiek/statistieken-en-records/nederlandse-records", text = "Atletiekunie Records" } },
+    { link = { href = "https://www.atletiekunie.nl/kenniscentrum/bestuurder-en-commissielid/accommodatie/inspectie-accommodatie", text = "Atletiekunie Inspectierapporten" } },
+    { link = { href = "https://worldathletics.org/about-iaaf/documents/technical-information", text = "World Athletics Technical Information" } },
+  ]
+
+[markup.highlight]
+  noClasses = false
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
